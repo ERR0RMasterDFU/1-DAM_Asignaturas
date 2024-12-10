@@ -1,0 +1,9 @@
+src/
+.eslintrc
+.gitignore
+.npmignore
+.prettierrc.json
+yarn.lock
+node_modules
+docs/
+typedoc.json

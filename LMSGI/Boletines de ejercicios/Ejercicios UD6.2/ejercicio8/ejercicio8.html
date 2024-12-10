@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletín 6.2 -> Ejercicio 8</title>
+    <style type="text/css"> 
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+
+    h1{
+        background-color: brown;
+        color: white;
+        border: 3px solid black;
+        text-indent: 5px;
+    }
+
+    form{
+        width: 40%;
+    }
+
+    input{
+        font-size: 20px;
+    }
+
+    input:last{
+        background-color: brown;
+    }
+
+    legend{
+        background-color: brown;
+        padding: 2px 4px;
+        border: 2px solid black;
+        color: white;
+    }
+
+    fieldset{
+        background-color: rgb(202, 201, 201);
+        border: 3px solid brown;
+        border-color: brown;
+    }
+
+    .fieldestLeft, .fieldestCenter{
+        display: flex;
+    }
+
+    .habitacion{
+        margin-left: 50px;
+    }
+
+    .fechaSalida{
+        margin-left: 100px;
+    }
+
+    .reservar{
+        background-color: brown;
+        color: white;
+        padding: 6px;
+        margin-top: 10px;
+        width: 100%;
+        transition: 0.5;
+    }
+
+    .reservar:hover{
+        background-color: rgb(255, 242, 0);
+        color: black;
+        padding: 6px;
+        margin-top: 10px;
+        width: 100%;
+    }    
+    </style>
+</head>
+    <body>
+        <h1>FORMULARIO PARA RESERVAS DE HOTEL</h1>
+        <form method="post" action="#" name="formulario8">
+            <fieldset class="fieldestLeft">
+                <legend><strong>Gestión de reservas</strong></legend>
+                <div class="huespedes">
+                    <label for="huespedes">Número de huéspedes</label></br>
+                    <input type="number" name="huespedes" id="huespedes" value="1" min="1" max="20">
+                </div>
+
+                <div class="habitacion">
+                    <label for="habitacion">Tipo de habitación</label></br>
+                    <input type="text" name="habitacion" id="habitacion" list="opciones" size="25">
+                    <datalist id="opciones">
+                        <option value="Individual"></option>
+                        <option value="Doble"></option>
+                        <option value="Cuádruple"></option>
+                        <option value="Suite"></option>
+                        <option value="VIP"></option>
+                        <option value="Familiar"></option>
+                        <option value="Matrimonial"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            </br>
+            <fieldset class="fieldestCenter">
+                <legend><strong>Fechas</strong></legend>
+                <div class="fechaEntrada">
+                    <label for="fechaEnt">Fecha de entrada</label></br>
+                    <input type="date" name="fechaEnt" id="fechaEnt" min="1900-01-01" max="2023-12-31">
+                </div>
+
+                <div class="fechaSalida">
+                    <label for="fechaSal">Fecha de salida</label></br>
+                    <input type="date" name="fechaSal" id="fechaSal" min="1900-01-01" max="2023-12-31">
+                </div>
+            </fieldset>
+            </br>
+            <fieldset>
+                <legend><strong>Correo electrónico y valoración</strong></legend>
+                <div>
+                    <label for="email">E-mail</label></br>
+                    <input type="email" name="email" id="email" placeholder="Introduzca su correo electrónico" required size="49" maxlength="320">
+                </div>
+                </br>
+                <div class="valoracion">
+                    <label for="valor">Valore su experiencia</label></br>
+                    <input type="checkbox" name="excelente" id="excelente">
+                    <label for="excelente">Excelente &emsp; :D</label><br>
+                    <input type="checkbox" name="bueno" id="bueno">
+                    <label for="bueno">No está mal &emsp; :P</label><br>
+                    <input type="checkbox" name="meh" id="meh">
+                    <label for="meh">Meh &emsp; :V</label><br>
+                    <input type="checkbox" name="mal" id="mal">
+                    <label for="mal">No sé que decirte &emsp; >:|</label><br>
+                    <input type="checkbox" name="puaj" id="puaj">
+                    <label for="puaj">Puaj &emsp; >:V</label><br>
+                </div>
+            </fieldset>
+            <input class="reservar" type="submit" id="reservar" name="reservar" value="RESERVAR">
+        </form>
+    </body>
+</html>

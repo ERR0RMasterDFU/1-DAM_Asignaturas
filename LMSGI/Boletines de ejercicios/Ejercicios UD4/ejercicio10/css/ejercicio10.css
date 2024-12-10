@@ -1,0 +1,73 @@
+body{
+    background-image: linear-gradient(to left, rgb(5, 255, 42), rgb(0, 116, 13));
+    box-sizing: border-box;
+}
+
+div{
+    width: 10px;
+}
+
+img{
+    margin: 10px;
+}
+
+#menu{
+    width: 700px;
+    margin: 10px -720px;
+}
+
+#menu:target{
+    transition: all 0.1s;
+    transform: translateX(710px);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    padding-top: 10px;
+    text-indent: 20px;
+    background-color: rgb(243, 223, 7);
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+
+}
+
+nav ul li ul{
+    margin: 10px 0px;
+}
+
+img{
+    border: solid black 3px;
+}
+
+nav>ul>li>ul>li{
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    font-size: 0px;
+    transition: all 0.5s;
+}
+
+nav>ul>li:hover>ul>li{
+    padding: 12px;
+    width: inherit;
+    height: inherit;
+    font-size: 16px;
+    background-color: rgb(255, 153, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav>ul>li>ul>li:hover{
+    background-color: rgb(164, 143, 4);
+    color: white;
+    transition: all 0.2s;
+}

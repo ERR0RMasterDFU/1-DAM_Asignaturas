@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        *{
+            box-sizing: border-box;
+        }
+
+        nav{
+            width: 85%;
+            margin: 0 auto;
+        }
+
+       nav ul{
+            list-style-type: none;
+            padding-left: 0px;
+            background-color: dimgrey;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        nav ul li{
+            padding: 10px;
+            height: 40px;
+        }
+
+        nav>ul{
+            display: flex;
+        }
+
+        nav>ul>li{
+            flex:1 1 auto;
+            height: 40px;;
+        }
+
+        /*Segundo nivel menú*/
+
+        nav>ul>li>ul>li{
+            height: 0px;
+            padding: 0px;
+            overflow: hidden;
+            font-size: 0;
+            transition: all 0.5s;
+        }
+
+        /*Las pongo visibles*/
+
+        nav>ul>li:hover>ul>li{
+            height: 50px;
+            padding: 20px 0 25px;
+            font-size: inherit;
+            text-align: center;
+        }
+
+        h1{
+            width: 100%;
+            height: 300px;
+            padding-top: 120px;
+            text-align: center;
+            color: white;
+            background-image: radial-gradient(circle closest-side at center, #26532B 50%, #399E5A 60%); /*to top, to bottom (pred), to right, to left. // to top left, to top right, to bottom left, to bottom right // ángulos: ¿?deg //
+                                                                                    A los colores se les puede añadir porcentajes, que es el número de transición que ocupa de un color a otro color.
+                                                                                    Si se añade rgba el fondo posee transparencia // Si se añade repeating linear-gradient el fonde se irá repitiendo. (para liner y radial)
+                                                                                    --Podemos usar radial-gradient para que salga en forma circular: radial-gradient(forma, dirección de cambio de color)--
+
+                                                                                    NO SOLO PERMITE DOS COLORES... ¡PERMITE TODOS LOS QUE QUIERAS! :P*/
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>LOS FONDOS DEGRADADOS</h1>
+    <nav>
+        <ul>
+            <li>Primera opción</li>
+            <li>Segunda opción
+                <ul>
+                    <li>Opción 2.1</li>
+                    <li>Opción 2.2</li>
+                    <li>Opción 2.3</li>
+                    <li>Opción 2.4</li>
+                </ul>
+            </li>
+            <li>Tercera opción</li>
+            <li>Cuarta opción</li>
+        </ul>
+    </nav>
+</body>
+</html>

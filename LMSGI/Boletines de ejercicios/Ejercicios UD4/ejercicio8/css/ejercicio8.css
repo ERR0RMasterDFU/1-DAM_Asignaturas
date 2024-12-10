@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to right, rgb(126, 3, 3), rgb(255, 51, 0));
+    box-sizing: border-box;
+}
+
+nav{
+    width: 700px;
+    margin: 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    justify-content: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    padding-top: 10px;
+    text-indent: 20px;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+}
+
+nav ul li ul{
+    margin: 10px 0px;
+}
+
+nav>ul>li>ul>li{
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    font-size: 0px;
+    transition: all 0.5s;
+}
+
+nav>ul>li:hover>ul>li{
+    padding: 12px;
+    width: inherit;
+    height: inherit;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(66, 27, 5);
+}
+
+nav>ul>li>ul>li:hover{
+    background-color: rgb(240, 164, 1);
+    color: black;
+    transition: all 0.2s;
+}

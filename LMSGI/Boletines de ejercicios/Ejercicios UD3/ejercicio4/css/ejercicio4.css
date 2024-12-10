@@ -1,0 +1,64 @@
+body{
+    background-color:khaki;
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: chocolate;
+    line-height: 125px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h2.fuente1{
+    font-family: "sans-serif";
+}
+
+h2.fuente2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2.fuente3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+p.fuente1{
+    font-family:'Refinado';
+}
+
+@font-face{
+    font-family: "Refinado";
+    src: url('../fonts/EduTASBeginner/EduTASBeginner-Medium.ttf');
+}
+
+p.fuente2{
+    font-family: 'RefinadoDos';
+}
+
+@font-face{
+    font-family: "RefinadoDos";
+    src: url('../fonts/PlaypenSans/PlaypenSans-Regular.ttf');
+}
+
+p.fuente3{
+    font-family: 'RefinadoTres';
+}
+
+@font-face{
+    font-family: "RefinadoTres";
+    src: url('../fonts/DancingScript/DancingScript-Regular.ttf');
+}
+
+div{
+    text-align: center;
+    font-family: 'RefinadoDos';
+
+}

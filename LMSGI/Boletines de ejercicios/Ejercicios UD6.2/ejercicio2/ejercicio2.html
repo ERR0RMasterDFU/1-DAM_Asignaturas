@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2 del Boletín 6.2</title>
+            <style type="text/css">
+
+                body{
+                    background-color: rgb(170, 223, 253);
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+
+                fieldset{
+                    background-color: rgb(0, 0, 106);
+                }
+
+                legend{
+                    background-color: white;
+                    padding: 2px 8px;
+                }
+
+                fieldset, legend{
+                    border: 2px solid black;
+                }
+
+                h1{
+                    background-color: rgb(0, 0, 106);
+                    color: white;
+                    text-indent: 8px;
+                    margin: 20px 0px;
+                    padding: 5px 0px;
+                }
+
+                label, select{
+                    color: white;
+                }
+
+                .contenedor{
+                    display: flex;
+                    align-items: center;
+                }
+
+                div{
+                    padding: 5px 0px;
+                    width: 100%;
+                    color: white;
+                }
+
+                .sexo, .fecha, .aficiones{
+                    flex: 1 1 25%;
+                }
+
+                .sexo{
+                    padding-left: 3px;
+                }
+
+                .aficiones{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .subAficiones1{
+                    padding-left: 25px;
+                }
+
+                .subAficiones2{
+                    padding-left: 10px;
+                }
+
+                .enviar{
+                    width: 180px;
+                }
+
+                .enviar2{
+                    width: 100%;
+                    text-align: center;
+                }
+            </style>
+    </head>
+    <body>
+         
+        <h1>FORMULARIO DE ALTA</h1>
+
+        <form method="post" action="#" name="formulario2">
+            <fieldset>
+                <legend><strong>NOMBRE Y APELLIDOS</strong></legend></br>
+                <label for="nombre">NOMBRE&nbsp;</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre" required maxlenght="50" size="35">
+
+                <label for="apellido1">&emsp;&emsp;PRIMER APELLIDO&nbsp;</label>
+                <input type="text" name="apellido1" id="apellido1" placeholder="Introduzca su primer apellido" required maxlenght="70" size="35">
+
+                <label for="apellido2">&emsp;&emsp;SEGUNDO APELLIDO&nbsp;</label>
+                <input type="text" name="apellido2" id="apellido2" placeholder="Introduzca su segundo apellido" required maxlenght="70" size="35">
+            </fieldset>    
+            </br>
+            <fieldset>
+                <legend><strong>DATOS DE CUENTA Y PRIVACIDAD</strong></legend></br>
+                <label for="nombreU">NOMBRE DE USUARIO&nbsp;</label>
+                <input type="text" name="nombreU" id="nombreU" placeholder="Introduzca su nombre de usuario" required maxlenght="60" size="29">
+
+                <label for="email">&emsp;&emsp;E-MAIL&nbsp;</label>
+                <input type="mail" name="email" id="email" placeholder="Introduzca su correo electrónico" required maxlength="320" size="30">
+                 
+                <label for="contrasenia">&emsp;&emsp;CONTRASEÑA&nbsp;</label>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Introduzca su contraseña" required maxlength="10" size="23">
+
+                <label for="contrasenia2">&emsp;&emsp;REPETIR CONTRASEÑA&nbsp;</label>
+                <input type="password" name="contrasenia2" id="contrasenia2" placeholder="Repita su contraseña" required maxlength="10" size="20">
+            </fieldset>
+            </br>
+            <fieldset class="contenedor">
+                <legend><strong>DATOS PERSONALES Y AFICIONES</strong></legend></br>
+                <div class="sexo">
+                    <label for="sexo">SEXO</label><br>
+                    &emsp;<input type="radio" name="sexo" value="M">Masculino<br>
+                    &emsp;<input type="radio" name="sexo" value="F">Femenino<br>
+                    &emsp;<input type="radio" name="sexo" value="0">Otro<br>
+                    &emsp;<input type="radio" name="sexo" value="X">Prefiero no decirlo<br><br>
+                </div>
+
+                <div class="fecha">
+                    <label for="fechaNac">FECHA DE NACIMIENTO</label>
+                    <input type="date" name="fechaNac" id="fechaNac" min="1900-01-01" max="2023-12-31">
+                </div>
+
+                <div class="aficiones">
+                    <label>AFICIONES</label><br>
+                    <div class="subAficiones1">
+                        <input type="checkbox" name="reloj" id="reloj">
+                        <label for="platos">Coleccionar relojes</label><br>
+                        <input type="checkbox" name="selva" id="selva">
+                        <label for="selva">Explorar selvas</label><br>
+                        <input type="checkbox" name="rodear" id="rodear">
+                        <label for="rodear">Rodear montañas</label><br>
+                        <input type="checkbox" name="monociclo" id="monociclo">
+                        <label for="monociclo">Montar en monociclo</label><br>
+                        <input type="checkbox" name="monoculo" id="monoculo">
+                        <label for="monoculo">Limpiar monóculos</label><br>
+                        <input type="checkbox" name="boton" id="boton">
+                        <label for="boton">Coleccionar botones</label><br>
+                    </div>
+
+                    <div class="subAficiones2">
+                        <input type="checkbox" name="micro" id="micro">
+                        <label for="micro">Reparar microondas</label><br>
+                        <input type="checkbox" name="iglu" id="iglu">
+                        <label for="iglu">Visitar iglús</label><br>
+                        <input type="checkbox" name="banios" id="banios">
+                        <label for="banios">Limpiar de baños</label><br>
+                        <input type="checkbox" name="peces" id="peces">
+                        <label for="peces">Adiestrar peces</label><br>
+                        <input type="checkbox" name="piedras" id="piedras">
+                        <label for="piedras">Recoger piedras</label><br>
+                        <input type="checkbox" name="mejillones" id="mejillones">
+                        <label for="mejillones">Comer mejillones</label>
+                    </div>
+                </div>
+            </fieldset>
+            </br></br>
+            <div class="enviar2">
+                <input class="enviar" type="image" name="enviar" src="./img/avionsaco.jpg" alt="enviar">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 3 del Boletín 9</title>
+		<meta charset="utf-8">
+
+		<script>
+			window.onload = function(){
+				let boton = document.querySelector('input[type="button"');;
+				boton.addEventListener('click',anade);
+			}
+
+			function anade() {
+				
+				let lista = document.getElementById('lista');
+
+				let crearElemento = document.createElement('li');
+
+				crearElemento.innerText = prompt('Por favor, escriba lo que quiera añadir en la lista.');
+
+				lista.append(crearElemento);
+				
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="lista">
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Consectetuer adipiscing elit</li>
+			<li>Sed mattis enim vitae orci</li>
+			<li>Phasellus libero</li>
+			<li>Maecenas nisl arcu</li>
+		</ul>
+		<input type="button" value="Añadir elemento">
+
+
+	</body>
+</html>

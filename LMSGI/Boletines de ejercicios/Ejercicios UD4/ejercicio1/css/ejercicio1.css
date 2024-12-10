@@ -1,0 +1,64 @@
+body{
+    box-sizing: border-box;
+    background-color: rgb(212, 212, 212);
+}
+
+nav{
+    width: min-content;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    border: solid 1px rgb(80, 80, 80);
+    border-radius: 50pt;
+    background-color: white;
+}
+
+nav ul li{
+    padding: 20px 10px 20px 10px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    border-left: solid 1px rgb(80, 80, 80);
+}
+
+nav ul li:hover{
+    background-color: black;
+    color: white;
+}
+
+.HOME{
+    border-left: 0px;
+}
+
+.HOME:hover{
+    border-bottom-left-radius: 43%;
+    border-top-left-radius: 43%;
+    background-color: black;
+    color: white;
+}
+
+.CONTACT:hover{
+    border-bottom-right-radius: 35%;
+    border-top-right-radius: 35%;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

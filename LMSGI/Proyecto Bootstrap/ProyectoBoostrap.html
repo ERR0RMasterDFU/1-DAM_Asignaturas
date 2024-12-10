@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-primary col-xs-1 col-sm-12 col-md-12 col-lg-12">
+
+<!---- MENÚ DE NAVEGACIÓN ------------------------------------------->
+
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center w-100">
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#portada"><strong>INICIO</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#trama"><strong>TRAMA</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#argumento"><strong>ARGUMENTO</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#tarjetas"><strong>PERSONAJES</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#tabla"><strong>ESPERS</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#carrusel"><strong>¿DÓNDE PUEDO JUGAR FINAL FANTASY VI?</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><a class="nav-link" href="#formulario"><strong>FORMULARIO PARA SER SOCIO</strong></a></li>
+                        <li class="nav-item flex-fill text-center"><button type="button" class="btn btn-secondary text-primary border-dark fw-bold" data-bs-toggle="modal" data-bs-target="#inicioSesion">INICIAR SESIÓN</button></li>
+                    </ul>
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+<!---- MODAL -------------------------------------------------------->
+
+            <div class="modal fade" id="inicioSesion" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <h1 class="modal-title fs-5 text-white fw-bold" id="ModalLabel">INICIO DE SESIÓN</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-lg-start">
+
+    <!---- FORMULARIO DE INICIO DE SESIÓN ------------------------------->
+
+                            <form action="ProyectoBoostrap.html">
+
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label text-primary mb-1 pb-0 fw-bold">Nombre de usuario</label>
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="nombreAviso" required>
+                                    <div id="nombreAviso" class="form-text">Tu nombre de usuario será visible públicamente.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-primary mb-1 pb-0 fw-bold">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailAviso" required>
+                                    <div id="emailAviso" class="form-text">Tu correo NUNCA será compartido con nadie.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contrasenia" class="form-label text-primary mb-1 pb-0 fw-bold">Contraseña</label>
+                                    <input type="password" class="form-control" id="contrasenia" aria-describedby="contraseniaAviso" required>
+                                    <div id="contraseniaAviso" class="form-text">Tu contraseña es privada ¡NO LA COMPARTAS!</div>
+                                </div>
+
+                                <input type="submit" class="btn btn-primary bg-primary border-dark border-2 fw-bold" value="INICIAR">
+
+                            </form>
+
+    <!------------------------------------------------------------------->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+<!------------------------------------------------------------------->
+
+        </nav>
+        <main class="mx-5">
+
+<!---- PORTADA ------------------------------------------------------>
+
+            <img src="img/FF6 - Portada.jpg" id="#portada" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" alt="Portada de Final Fantasy VI"></img>
+
+<!------------------------------------------------------------------->
+
+<!---- PRIMERA SECCIÓN DE CONTENIDO --------------------------------->
+
+            <div class="container-fluid">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="trama">TRAMA</h1>
+                </br>
+                <p class="border border-3 border-primary px-2 py-1 bg-black" style="--bs-bg-opacity: .1">El contexto histórico del juego es desconocido para el jugador en el comienzo, pero durante la primera mitad del juego (particularmente tras el 
+                    final de esa parte), los personajes comienzan a entender la situación reinante. Mil años antes de los eventos del juego, tres diosas que 
+                    representaban todo el poder de la magia existente lucharon entre sí en una guerra. Esta contienda esparció enormes cantidades de magia por todo 
+                    el mundo, transformando a todo humano que fue afectado por ellas en unas criaturas mágicas conocidas como "Espers," bajo el control de las diosas. 
+                    Las tres diosas, llamadas la Tríade marcial, usaron a los espers como soldados en aquella guerra entre los tres, por lo que el conflicto pasó a 
+                    denominarse la "Guerra de los Magi". Finalmente, las diosas se dieron cuenta de que aquella guerra no hacía más que perjudicar a todos, y queriendo 
+                    reparar el daño que hicieron, devolvieron la libertad a los espers y se convirtieron a sí mismas en piedra. Los Espers se asegurarían de que 
+                    permaneciesen selladas y su poder no se desatase de nuevo. Cuando la guerra acabó, los humanos supervivientes y los espers eran muy diferentes en 
+                    apariencia, gustos y forma de vida. Por tanto, los espers se fueron a vivir a otra dimensión, llevándose consigo las estatuas de las diosas y 
+                    sellando la entrada entre su mundo y el de los humanos.</p>
+                    
+                <div class="container-fluid mb-4 fw-bold text-center">
+                    <div class="row">
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Castillo_Antiguo_Despues_Guerra_Magi.png" alt="Foto del Castillo Antiguo después de la Guerra de los Magi" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Castillo Antiguo después de la Guerra de los Magi.</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Castillo_Antiguo_Durante_Guerra_Magi.png" alt="Foto del Castillo Antiguo durante la Guerra de los Magi" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Castillo Antiguo durante la Guerra de los Magi.</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Reunion_Espers_Humanos.png" alt="Foto de una reunión entre Espers y Humanos" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Reunión entre Espers y Humanos</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Triade_Marcial.png" alt="Foto de la Tríade Marcial" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">La Tríade Marcial</p>
+                        </div> 
+                    </div>
+                </div>
+                    
+                <p class="border border-3 border-primary px-2 py-1 bg-black" style="--bs-bg-opacity: .1">Gradualmente, la raza humana fundó una sociedad basada en la tecnología y la Guerra de los Magi pasó a ser una leyenda. En la actualidad, la 
+                    tecnología más poderosa está en manos del Imperio, un país dictatorial, expansivo y cruel, regido por el Emperador Gesthal y sus generales, Kefka, 
+                    Leo Cristophe y Celes Chere. Aproximadamente dieciocho años antes de los acontecimientos del juego, la barrera entre el mundo humano y la dimensión 
+                    de los espers se debilitó y una mujer la atravesó por accidente. A pesar de que muchos de los espers desconfiaran de ella y creyesen que los humanos 
+                    no pudiesen coexistir con los espers, uno llamado "Maduin" cree que deberían intentarlo antes de juzgar. La mujer, cuyo nombre es Madeline 
+                    se queda en el mundo de los espers, y pronto tiene una hija con Maduin, llamada "Terra". Entonces Gestahl, llevado por su ambición de obtener el 
+                    legendario poder de los espers, avanza a través de la debilitada barrera y lanza un ataque en un intento por atrapar a la mayor cantidad posible de 
+                    Espers. Antes del intento desesperado del líder de los espers de invocar un hechizo que envía a través del portal dimensional a las fuerzas de Gestahl, 
+                    muchos espers son capturados, y Maduin, su esposa, y una Terra bebé son atrapados en el hechizo. Maduin y su hija son capturados, mientras que su esposa 
+                    muere.</p>
+                    
+                <div class="container-fluid mb-4 fw-bold text-center">
+                    <div class="row">
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Gestahl_con_los_Generales.jpg" alt="Foto del emprador Gestahl con los 3 generales (Kefka, Leo y Celes) y Terra" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">El emprador Gestahl con los 3 generales (Kefka, Leo y Celes) y Terra</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Barrera_que_separa_el_Mundo_Humano_y_Esper.jpg" alt="Foto de la Barrera que separa el mundo humano del mundo esper" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Barrera que separa el mundo humano del mundo esper</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Maduin_encontrando_a_Madeline.jpg" alt="Foto de Maduin encontrando a Madeline en el mundo esper tras atravesar la barrera" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Maduin encontrando a Madeline en el mundo esper tras atravesar la barrera</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Gestahl_capturando_a_Terra_ y_Maduin .jpg" alt="Foto de Gestahl capturando a Maduin y Terra" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Gestahl capturando a Maduin y Terra</p>
+                        </div> 
+                    </div>
+                </div>
+
+                <p class="border border-3 border-primary px-2 py-1 bg-black" style="--bs-bg-opacity: .1">Usando a los espers como fuente de poder, Gestahl inició un programa de desarrollo para combinar magia con maquinaria e infundir a los humanos sus 
+                    poderes mágicos, el resultado fue una tecnología conocida como "Magitek." El Imperio alojó este concepto de Magitek en grandes vehículos mecánicos 
+                    conocidos como "Armaduras Magitek", que permitían a un soldado usar el poder de la magia. Además, Kefka fue modificado con magia, volviéndose el primer 
+                    prototipo de una nueva línea de "Súper soldados" llamados "Guerreros Magitek", que posteriormente incluiría a Celes Chere. Este procedimiento aún estaba 
+                    en la fase de desarrollo, y como resultado, la cordura de Kefka fue severamente dañada. Otro invento Magitek fue la "Corona de la Esclavitud", un aparato 
+                    que permite controlar a una persona. Cuando Terra creció, El Imperio uso el aparato para controlar sus acciones y usarla como un arma. Sumando el potencial 
+                    Magitek con sus habilidades mágicas naturales, al inicio del Juego, El Imperio se encuentra en el camino de redescubrir el potencial completo de la Magia y 
+                    reabrir el Portal al Mundo de Los Espers. Mientras tanto, al régimen del Imperio, se le oponen los Replicantes, un grupo de rebeldes que buscan derrocar al 
+                    Imperio y liberar sus territorios.</p>
+
+                <div class="container-fluid mb-4 fw-bold text-center">
+                    <div class="row">
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Soldado_en_Armadura_Magitek.jpg" alt="Foto de un soldado en armadura Magitek" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Un soldado en armadura Magitek</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Kefka_maltratando_a_Celes.jpg" alt="Foto de Kefka maltratando a Celes por su locura" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Kefka maltratando a Celes por su locura</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Kefka_poniendole_a_Terra_la_Corona_Esclavitud.jpg" alt="Foto de Kefka poniéndole a Terra la Corona de la Esclavitud" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Kefka poniéndole a Terra la Corona de la Esclavitud</p>
+                        </div>
+                        <div class="container-fluid text-center px-1" style="width: 50%;">
+                            <img src="img/Trama y argumento/Reunion_de_los_Replicantes.jpg" alt="Foto de una reunión de Los Replicantes" class="w-100 m-1 border border-primary border-3 mx-auto d-block"></img>
+                            <p class="bg-primary text-white py-1 mb-1">Reunión de Los Replicantes</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+            </br>
+            </br>
+
+<!---- SEGUNDA SECCIÓN DE CONTENIDO --------------------------------->
+<!------------------------------------------------------------------->
+
+            <div class="container-fluid">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="argumento">ARGUMENTO</h1>
+                <p>Final Fantasy VI se inicia con Terra Branford participando en una búsqueda Imperial en Narshe, buscando un Esper congelado, recién desenterrado (después lo 
+                    identificarían como Tritoch) encontrado en las minas de la ciudad. Posteriormente, durante la búsqueda, sus controladores son asesinados y el Control Imperial 
+                    sobre ella se rompe, pero es incapaz de recordar nada acerca de su pasado. Locke Cole, un ladrón "Cazador de Tesoros", promete protegerla hasta que recupere la 
+                    memoria y después de ayurdarla a escapar, la lleva al escondite de los Replicantes, un grupo de milicianos que se oponen al Imperio. Durante el camino, ellos 
+                    irán al Reino de Figaro y conocerán a Edgar Roni Figaro, El Rey, y su hermano, Sabin Rene Figaro, quienes se unirán al grupo. Banon, líder de los Replicantes, 
+                    preguntara a Terra si los ayudara con sus habilidades en contra del Imperio y ella aceptara.
+
+                <p>Tan pronto como la resistencia se prepara para regresar a Narshe a investigar el esper congelado, el Imperio inicia la invasión del cercano pueblo de Figaro del Sur. 
+                    Locke se dirige al pueblo a tratar de detener el avance del Imperio, mientras que el resto del grupo recorre su camino a través del río Lete. Sin embargo, estos se 
+                    ven obligados a separarse después de una batalla con Ultros, el auto proclamado "REY DE LOS PULPOS" y un antagonista recurrente, por lo que varios de los miembros 
+                    de los Replicantes a encontrar su camino hacia Narshe a través de tres diferentes escenarios controlados por el jugador.</p>
+
+                <p>Eventualmente, el grupo original se reunirá en Narshe. Locke llegará con Celes Chere, una de las Generales del Imperio, quien será salvada por el de ser ejecutada 
+                    por contarvenir las prácticas del Imperio. Sabin estará acompañado de Cyan Garamonde, cuya familia será asesinada durante la estancia que el Imperio estableció sobre 
+                    el Castillo de Doma cuando Kefka ordenó envenenar los depósitos de agua, y Gau, un niño salvaje encontrado en el Pastizal. En Narshe, los Replicantes se preparan para 
+                    defender el Esper del Imperio. Después de que el jugador haya detenido la invasión Imperial, Terra se acercará al esper, lo que le provocara una trasformación en un 
+                    ser similar a un esper. Después de esto, ella se alejará volando, confusa y horrorizada por su propia transformación.</p>
+
+                <p>Los Replicantes iniciaran la búsqueda de Terra y eventualmente se dirigirán a la ciudad de Zozo, donde ella se encuentra conmocionada por su aparente existencia como 
+                    esper. Ahí conocerán al esper Lamú, que les dice que si liberan a otros espers de "Vector", la Capital Imperial, podrían encontrar a alguno que los ayude con Terra.</p>
+
+                <p>Vector se encuentra en el continente del Sur, donde el Imperio no permite el acceso por mar, por lo que los Replicantes se dirigen a la Mansión de la Opera y reclutan 
+                    a Setzer Gabbiani, quien es conocido por tener el último barco volador del mundo, El Blackjack. Ellos viajaran hacia Vector y tratarán de rescatar a varios Espers, 
+                    entre los cuales está Maduin, quien rebela ser el padre de Terra. Entonces, los espers deciden dar sus vidas para transformarse en magicitas —la cristalizada forma 
+                    que toma su esencia al morir y que permite a otros usar sus poderes— como lo comprobarán los Replicantes. Antes de que el grupo pueda escapar, Kefka llega causando 
+                    entre los Replicantes, incluyendo en Locke, una duda momentánea sobre la lealtad de Celes, lo que la inundará de tristeza. Como prueba de su lealtad, ella se quedará 
+                    cubriendo la retirada del equipo mientras escapan.</p>
+
+                <p>El resto del grupo regresará a Zozo, para enseñarle a Terra la magicita de su padre, lo que mostrará eventos del pasado y hará que se acepte así misma como la hija 
+                    mestiza de Maduin y una mujer.
+                    Después de reunirse con Terra, los Replicantes deciden que es momento de lanzar un ataque masivo contra el Imperio, y Banon Pregunta a Terra si tratara de buscar a 
+                    los Espers para pedirles su apoyo. Terra logra hacer el contacto, y observa que los espers, al enterarse de la muerte de los que habían sido capturados por el Imperio, 
+                    se enfurecen y entran al mundo humano, destruyendo Vector.</p>
+
+                <p>Al llegar los Replicantes a la capital, encuentran al Emperador Gestahl quien afirma no desear continuar con la lucha, invitando a los Replicantes a un banquete para 
+                    negociar la paz. Gestahl pregunta a Terra si podría hablar con los espers en su nombre, a lo que ella acepta. Guiados por Locke, Shadow (un ninja a sueldo) y los 
+                    Generales Celes y Leo, el jugador deberá guiar a Terra a la villa de Thamasa en busca de los espers. En la villa, conocerán a Strago Magus y su nieta, Relm Arrowny, 
+                    que se unirán a la búsqueda después de salvar a Relm de un incendio.</p>
+
+                <p>Enseguida se encuentran a los Espers calmados y Terra les convence para aceptar la tregua de Gestahl. Sin embargo, durante las negociaciones, Kefka agrede a los Espers, 
+                    matando a los que aún seguían vivos para apoderarse de sus magicitas. Además, asesina al General Leo, el cual está consternado por las prácticas desonestas de Kefka, 
+                    mientras intentaba defender a los Espers. En una reunión de los Replicantes, Edgar comentó que le habían pegado el chivatazo de que todo era una sucia estratagema del 
+                    emperador para apoderarse de las Magicitas y de la tríade marcial, ahora sin sellar. Kefka y Gestahl viajaron través del portón al mundo de los Espers, encontrando la 
+                    Tríade marcial, desprendiéndose de la tierra el continente que da lugar a la entrada de los espers y lanzado hacia el aire formando un continente flotante. Los Replicantes 
+                    hacen todo lo posible para evitar la catástrofe, pero a pesar de todo, no pudieron hacer absolutamente nada para que Gestahl y Kefka consiguiesen obtener el poder de las 
+                    estatuas. Una vez conseguido, Kefka traiciona y elimina a Gestahl y cambia las estatuas de su posición original, alterando el equilibrio mágico que las unía, causando 
+                    una debacle en toda la superficie de la tierra, separándose gran parte de las tierras continentales. Mientras escapaban, los Replicantes fueron separados cada uno por un 
+                    lado cuando se quebraba el barco volador de Setzer.</p>
+
+                <p>Un año después, Celes despierta de un coma en una isla desierta, junto a Cid, y se percata de la destrucción del mundo por parte de Kefka. Gran parte de la población humana 
+                    había perecido y la fauna y la flora está muriendo lentamente por una enfermedad para acentuar la desesperación de la humanidad. Celes abandonó la isla para intentar reunirse 
+                    con la mayor cantidad de camaradas posible. Uno por uno, a medida que exploraba el mundo se iba reencontrando a cada vez más, con suerte seguían todos con vida, además de 
+                    encontrar nuevos compañeros como Gogo y Umaro. Una vez reunidos, los Replicantes lanzaron una nueva ofensiva contra Kefka, usando el Halcón —un barco volador perteneciente a 
+                    la desaparecida amiga de Setzer— para infiltrarse en la Torre de Kefka. Dentro, Los Replicantes lucharon contra todas sus defensas y destruyeron las tres estatuas, la fuente 
+                    de los nuevos poderes de Kefka. Cuando fueron destruidas, pese a ser la fuente de toda la magia, no causó ninguna reacción visible, se descubre que Kefka había drenado todo el 
+                    poder de las estatuas, convirtiéndose él en toda la fuente de poder mágico.
+
+                <p>En el último combate contra Kefka, los Replicantes consiguieron derrotarlo, pero ya que el poder de todas las magicitas había ido a residir a él, la torre empezó a desmoronarse. 
+                    Terra saca a los personajes pero se comienza a debilitar debido a su mestizaje. Sin embargo, antes de que la magicita de Maduin se rompa, su espíritu le informa que puede 
+                    sobrevivir gracias a la manifestación de su parte humana. El final concluye con todos escapando de la torre de Kefka y el resto de las comunidades del mundo al borde de la ruina, 
+                    empiezan a prosperar.</p>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+            </br>
+            </br>
+
+<!---- COMPONENTES DE TIPO TARJETA ---------------------------------->
+
+            <div class="container-fluid">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="tarjetas">PERSONAJES</h1>
+                </br>
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center">
+
+                        <div class="card pt-3 bg-primary me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Terra_Brandford.png" class="card-img-top bg-white border border-3 border-primary" alt="Foto de Terra Brandford">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">TERRA BRANDFORD</h5>
+                                <p class="card-text">Mitad humana y mitad esper, pasó la mayor parte de su vida como una esclava del Imperio a causa de sus poderes. Perseguida por sus anteriores 
+                                    captores después de que fuera liberada por un esper congelado en Narshe, se unió a Los Replicantes para escapar del imperio y averiguar por qué es capaz de 
+                                    utilizar la magia.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-info me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Locke_Cole.png" class="card-img-top bg-white border border-3 border-info" alt="Foto de Locke Cole">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">LOCKE COLE</h5>
+                                <p class="card-text">Cazador de tesoros y simpatizante de la rebelión. Tiene un pasado bastante trágico, aunque normalmente se muestra como un hombre muy alegre, 
+                                    extrovertido y carismático. Él es quien ayuda a Terra a escapar del imperio y la introduce en el grupo "Los Replicantes". Su habilidad especial es robar, 
+                                    que le permite conseguir objetos burlando a sus enemigos. </p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-info me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Edgar_Roni_Figaro.png" class="card-img-top bg-white border border-3 border-info" alt="Foto de Edgar Roni Fígaro">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">EDGAR RONI FÍGARO</h5>
+                                <p class="card-text">Un mujeriego consumado y el rey de Fígaro, quien se dice leal al Imperio mientras secretamente suministra ayuda a los Replicantes; Edgar es muy 
+                                    hablidoso con sus utensilios, los cuales le permiten atacar a sus enemigos con un surtido de armas especiales que irá encontrando durante el transcurso del juego.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-danger me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Sabin_Rene_Figaro.png" class="card-img-top bg-white border border-3 border-danger" alt="Foto de Sabin René Fígaro">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">SABIN RENÉ FÍGARO</h5>
+                                <p class="card-text">Hermano de Edgar y, por lo tanto, príncipe de Fígaro. Sabin huyó de la Corte Real para perfeccionar sus habilidades en artes marciales. Entabla 
+                                    una fuerte amistad con Gau, tras combatir contra él y descubrir que no era capaz de vencerlo. Es todo un experto realizando técnicas, que le permiten utilizar 
+                                    varias habilidades que se activan con combinaciones de botones.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-success me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Celes_Chere.png" class="card-img-top bg-white border border-3 border-success" alt="Foto de Celes Chere">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">CELES CHERE</h5>
+                                <p class="card-text">Una antigua general del Imperio, que se unió a los Replicantes luego de ser encarcelada por cuestionar las prácticas imperiales. Tras ser rescatada 
+                                    por Locke, se une a Los Replicantes en su lucha contra el Imperio. Junto con Terra es la única que puede utilizar la magia de manera natural, con el hechizo predeterminado 
+                                    de Hielo.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-info me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Cyan_Garamonde.png" class="card-img-top bg-white border border-3 border-info" alt="Foto de Cyan Garamonde">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">CYAN GARAMONDE</h5>
+                                <p class="card-text">Caballero del reino de Doma y experto Samurái. El único superviviente del ataque imperial a Doma, se une a Los Replicantes para vengar a su familia y a 
+                                    su reino. Cyan puede usar el Bushido, un estado de concentración que le permite realizar varias técnicas poderosas con su espada, aunque debe tomarse su tiempo para poder 
+                                    usar las más poderosas.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-black me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Shadow.png" class="card-img-top bg-white border border-3 border-black" alt="Foto de Shadow">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">SHADOW</h5>
+                                <p class="card-text">Un ninja mercenario, que ofrece sus servicios por igual al Imperio y a los Replicantes en varias ocasiones a lo largo del juego. Finalmente, decide unirse 
+                                    al grupo de los héroes permanentemente tras la catástrofe en el continente volador. Como ninja que es, Shadow es capaz de arrojar shurikens y utlizar pergaminos elementales 
+                                    contra sus enemigos. Además tiene un fiel perro llamado Interceptor, que le protege.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-success me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Gau.png" class="card-img-top bg-white border border-3 border-success" alt="Foto de Gau">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">GAU</h5>
+                                <p class="card-text">Un niño salvaje, que para sobrevivir ha tenido que aprender a imitar a los salvajes animales del Pastizal. Al final, acaba forjando una fuerte amistad 
+                                    con Cyan y con Sabin. La gran expereancia adquirida a la intemperie por Gau le permite usar Cólera y Salto. Con Salto puede aprender las habilidades de los animales del 
+                                    pastizal, para luego utilizarlas con Cólera.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-black me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Setzer_Gabbiani.png" class="card-img-top bg-white border border-3 border-black" alt="Foto de Setzer Gabbiani">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">SETZER GABBIANI</h5>
+                                <p class="card-text">Un Tahúr tramposo, dueño del último barco volador "El Blackjack". Es un personaje bohemio y aventurero que está convencido de que la mejor vida que puede 
+                                    llevar una persona es una que no tenga obligaciones de por medio. Su sed de aventuras le lleva a unirse a los Replicantes casi sin pensárselo por una apuesta que él mismo 
+                                    propone y acaba perdiendo.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-warning me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Strago_Magus.png" class="card-img-top bg-white border border-3 border-warning" alt="Foto de Strago Magus">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">STRAGO MAGUS</h5>
+                                <p class="card-text">El anciano abuelo de Relm y descendiente de los guerreros que lucharon en la ancestral Guerra de los Magi. Strago ha heredado algunos de sus poderes místicos. 
+                                    Los Replicantes se encuentran con él mientras pasan por el poblado de Thamasa, y se une a ellos por la seguridad del mundo. Su habilidad especial es el Bagaje (también concoida 
+                                    como Magia Azul), que le permite aprender ciertas habilidades mágicas de los enemigos y utilizarlas en combate.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-danger me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Relm_Arrowny.png" class="card-img-top bg-white border border-3 border-danger" alt="Foto de Relm Arrowny">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">RELM ARROWNY</h5>
+                                <p class="card-text">Nieta adoptiva de Strago y experimentada artista, Relm se acaba uniendo a Los Replicantes a pesar de las continuas reprimendas de su abuelo. Puede dibujar a sus enemigos 
+                                    en su lienzo para que dicha copia cobre vida y les ataque. Se desconoce quienes son sus padres, aunque se sospecha que uno de ellos es Shadow.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-primary me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Mog.png" class="card-img-top bg-white border border-3 border-primary" alt="Foto de Mog">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">MOG</h5>
+                                <p class="card-text">Un moguri de las minas de Narshe capaz de hablar como un humano y gran bailarín. Mog se une a Los Replicantes después de que le salven la vida defendiéndole de un ladrón. 
+                                    Mog es capaz de bailar usando diversos pasos para crear ataques durante la batalla. Una vez que empieza, continúa bailando con pasos aleatorios de la categoría seleccionada hasta que termina 
+                                    la batalla.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-info me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Umaro.png" class="card-img-top bg-white border border-3 border-info" alt="Foto de Umaro">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">UMARO</h5>
+                                <p class="card-text">Un salvaje pero leal Yeti originario de Narshe, quien se une a los Replicantes debido a la persuasión de Mog. Umaro es el único personaje principal que no puede ser controlado 
+                                    al 100% por el jugador. Su fuerza bruta le permite repartir puñetazos a diestro y siniestro, además de poder invocar una enorme ventisca cuando le venga en gana.</p>
+                            </div>
+                        </div>
+
+                        <div class="card pt-3 bg-warning me-1 my-1" style="width: 23rem; --bs-bg-opacity: .25;">
+                            <img src="img/Personajes/Gogo.png" class="card-img-top bg-white border border-3 border-warning" alt="Foto de Gogo">
+                            <div class="card-body px-2">
+                                <h5 class="card-title fw-bold">GOGO</h5>
+                                <p class="card-text">Un desconocido e increíblemente hábil maestro del arte de la mímica. Se encuentra rodeado por un aura de misterio y sus orígenes han dado lugar a varias especulaciones. Gogo vive 
+                                    dentro de una cueva, a la que solo se puede llegar al ser tragado por una criatura llamada Tragaldabas en la Isla Triángulo. Es un "personaje secreto" con la extraña capacidad de poder realizar 
+                                    mímica, que le permite utilizar las habilidades de sus compañeros después de que ellos las utilicen.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+            </br>
+            </br>
+
+<!---- TABLA DE DATOS ----------------------------------------------->
+
+            <div class="container-fluid px-0">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="tabla">ESPERS</h1>
+                </br>
+                <div class="container-fluid px-0">
+                    <table class="table table-bordered align-middle border border-black">
+                        <thead class="text-center bg-primary" style="--bs-bg-opacity: .25;">
+                            <th class="bg-danger" style="width: 1rem; --bs-bg-opacity: .25;">ESPER</th>
+                            <th class="bg-danger" style="width: 1rem; --bs-bg-opacity: .25;">NOMBRE</th>
+                            <th class="bg-danger" style="--bs-bg-opacity: .25;">HABILIDAD ESPECIAL</th>
+                            <th class="bg-danger" style="width: 12rem; --bs-bg-opacity: .25;">MAGIAS QUE ENSEÑA</th>
+                            <th class="bg-danger" style="width: 14rem; --bs-bg-opacity: .25;">COSTE DE INVOCACIÓN</th>
+                        </thead>
+                        <tbody class="align-middle text-center">
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Lamu.png" alt="Foto de Lamú"></td>
+                                <td >Lamú</td>
+                                <td class="text-start"><strong>Rayo del Juicio:</strong><br>Daño de Elemento Rayo a todos los enemigos, poder Mágico de 50.</td>
+                                <td>Electro<br>Electro +<br>Bio</td>
+                                <td>25 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Kirin.png" alt="Foto de Kirin"></td>
+                                <td>Kirin</td>
+                                <td class="text-start"><strong>Aura Sagrada:</strong><br>Todo el grupo obtiene Revitalia.</td>
+                                <td>Cura<br>Cura +<br>Revitalia<br>Bio<br>Libra</td>
+                                <td>18 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Sirena.png" alt="Foto de Sirena"></td>
+                                <td>Sirena</td>
+                                <td class="text-start"><strong>Voz lunática:</strong><br>Inflige Mudez a todos los enemigos. Tiene 136% de probabilidades de acertar.</td>
+                                <td>Morfeo<br>Mutis<br>Freno<br>Piro</td>
+                                <td>16 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Cait_Sith.png" alt="Foto de Cruzado"></td>
+                                <td>Cait Sith</td>
+                                <td class="text-start"><strong>Lluvia felina:</strong><br>Inflige Confusión a todos los enemigos. Tiene 128% de probabilidades de acertar.</td>
+                                <td>Confu<br>Kappa<br>Lévita</td>
+                                <td>28 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Ifrit.png" alt="Foto de Ifrit"></td>
+                                <td>Ifrit</td>
+                                <td class="text-start"><strong>Fuego infernal:</strong><br>Daño de Elemento Fuego a todos los enemigos, poder Mágico de 51.</td>
+                                <td>Piro<br>Piro +<br>Drenaje</td>
+                                <td>26 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Shiva.png" alt="Foto de Shiva"></td>
+                                <td>Shiva</td>
+                                <td class="text-start"><strong>Polvo de diamante:</strong><br>Daño de Elemento Hielo a todos los enemigos, poder Mágico de 52.</td>
+                                <td>Hielo<br>Hielo +<br>Lima<br>Aspir<br>Cura</td>
+                                <td>27 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Unicornio.png" alt="Foto de Unicornio"></td>
+                                <td>Unicornio</td>
+                                <td class="text-start"><strong>Cuerno sanador:</strong><br>Cura los estados: cegera, veneno, piedra, silencio, confusión, rana, morfeo, freno y paro.</td>
+                                <td>Cura<br>Esna<br>Antimagia<br>Coraza<br>Escudo</td>
+                                <td>30 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Maduin.png" alt="Foto de Maduin"></td>
+                                <td>Maduin</td>
+                                <td class="text-start"><strong>Ola caótica:</strong><br>Daño No-Elemental a todos los enemigos, poder Mágico de 55.</td>
+                                <td>Piro +<br>Electro +<br>Hielo +</td>
+                                <td>44 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Catoblepas.png" alt="Foto de Catoblepas"></td>
+                                <td>Catoblepas</td>
+                                <td class="text-start"><strong>Ojo demoníaco:</strong><br>Inflige el estado Piedra a todos los enemigos. Tiene 96% de probabilidades de acertar (falla si el objetivo es inmune a la muerte instantánea).</td>
+                                <td>Bio<br>Petra<br>muerte</td>
+                                <td>45 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Espectro.png" alt="Foto de Espectro"></td>
+                                <td>Espectro</td>
+                                <td class="text-start"><strong>Velo fanstamagórico:</strong><br>Todo el grupo obtiene el estado Invisible.</td>
+                                <td>Berserker<br>Tenue<br>Gravedad</td>
+                                <td>38 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Rubi.png" alt="Foto de Rubí"></td>
+                                <td>Rubí</td>
+                                <td class="text-start"><strong>Resplandor de Rubí:</strong><br>Todo el grupo obtiene Espejo.</td>
+                                <td>Espejo<br>Prisa<br>Escudo<br>Coraza<br>Teleportar</td>
+                                <td>36 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Bismarck.png" alt="Foto de Bismarck"></td>
+                                <td>Bismarck</td>
+                                <td class="text-start"><strong>Burbujas mortíferas:</strong><br>Daño de Elemento Agua a todos los enemigos, poder Mágico de 58.</td>
+                                <td>Piro<br>Hielo<br>Electro<br>Lázaro</td>
+                                <td>50 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Golem.png" alt="Foto de Gólem"></td>
+                                <td>Gólem</td>
+                                <td class="text-start"><strong>Pared de tierra:</strong><br>Protege al grupo de los ataques físicos, la cantidad de daño que gólem resistirá = HP del usuario.</td>
+                                <td>Coraza<br>Paro<br>Cura +</td>
+                                <td>33 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Guardian_Zonal.png" alt="Foto de Guardián Zonal"></td>
+                                <td>Guardián Zonal</td>
+                                <td class="text-start"><strong>Escudo mágico:</strong><br>Todo el grupo obtiene Escudo.</td>
+                                <td>Lima<br>Aspir<br>Escudo</td>
+                                <td>30 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Serafin.png" alt="Foto de Serafín"></td>
+                                <td>Serafín</td>
+                                <td class="text-start"><strong>Plumas de ángel:</strong><br>Recupera VT a todo el grupo, tiene poder Mágico de 18.</td>
+                                <td>Lázaro<br>Cura<br>Cura +<br>Revitalia<br>Esna</td>
+                                <td>18 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Quetzal.png" alt="Foto de Quetzal"></td>
+                                <td>Quetzal</td>
+                                <td class="text-start"><strong>Salto sónico:</strong><br>Todo el grupo usa el comando Salto.</td>
+                                <td>Prisa<br>Freno<br>Prisa +<br>Freno +<br>Lévita</td>
+                                <td>61 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Fenrir.png" alt="Foto de Fenrir"></td>
+                                <td>Fenrir</td>
+                                <td class="text-start"><strong>Luna aullante:</strong><br>Todo el grupo obtiene el estado Imagen.</td>
+                                <td>Teleportar<br>Exilio<br>Paro</td>
+                                <td>70 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Valigarmanda.png" alt="Foto de Valigarmanda"></td>
+                                <td>Valigarmanda</td>
+                                <td class="text-start"><strong>Tridesastre:</strong><br>Ocasiona daño de Elementos Fuego, Hielo, y Rayo a todos los enemigos, tiene poder Mágico de 110.</td>
+                                <td>Piro ++<br>Hielo ++<br>Electro ++</td>
+                                <td>68 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Midgardsormr.png" alt="Foto de Midgardsormr"></td>
+                                <td>Midgardsormr</td>
+                                <td class="text-start"><strong>Ira telúrica:</strong><br>Daño de Elemento Tierra a todos los enemigos, tiene poder Mágico de 93, y 150% probabilidades de acertar.</td>
+                                <td>Temblor<br>Gravedad<br>Tornado</td>
+                                <td>40 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Lakshmi.png" alt="Foto de Lakshmi"></td>
+                                <td>Lakshmi</td>
+                                <td class="text-start"><strong>Abrazo mistificador:</strong><br>Recupera VT a todo el grupo, tiene poder Mágico de 34.</td>
+                                <td>Cura<br>Cura +<br>Cura ++<br>Revitalia<br>Esna</td>
+                                <td>74 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Alejandro.png" alt="Foto de Alejandro"></td>
+                                <td>Alejandro</td>
+                                <td class="text-start"><strong>Juicio divino:</strong><br>Daño de Elemento Sacro a todos los enemigos, tiene poder Mágico de 114.</td>
+                                <td>Sanctus<br>Coraza<br>Escudo<br>Antimagia<br>Esna</td>
+                                <td>90 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Fenix.png" alt="Foto de Fenix"></td>
+                                <td>Fénix</td>
+                                <td class="text-start"><strong>Llamas del renacer:</strong><br>Revive a todos los aliados en estado K.O. con 1/4 de su máxima VT, y tiene poder Mágico de 4.</td>
+                                <td>Lázaro<br>Lázaro +<br>Cura ++<br>Piro +</td>
+                                <td>110 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Odin.png" alt="Foto de Odín"></td>
+                                <td>Odín</td>
+                                <td class="text-start"><strong>Zantetsuken:</strong><br>Puede matar a todos los enemigos de un golpe, tiene 110% probabilidades de acertar y falla si el enemigo es inmune a la Muerte instantánea. Detiene el Ataque Final del enemigo durante un turno.</td>
+                                <td>Meteo</td>
+                                <td>70 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Bahamut.png" alt="Foto de Bahamut"></td>
+                                <td>Bahamut</td>
+                                <td class="text-start"><strong>Megafulgor:</strong><br>Causa daño No-Elemental a todos los enemigos, tiene poder Mágico de 92.</td>
+                                <td>Fulgor</td>
+                                <td>68 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Ragnarok.png" alt="Foto de Ragnarok"></td>
+                                <td>Ragnarok</td>
+                                <td class="text-start"><strong>Metamorfosis:</strong><br>Convierte a un enemigo en un objeto. (El porcentaje de probabilidades de acertar varía según el enemigo).</td>
+                                <td>Artema</td>
+                                <td>6 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Cruzado.png" alt="Foto de Cruzado"></td>
+                                <td>Cruzado</td>
+                                <td class="text-start"><strong>Purificación:</strong><br>Causa daño No-Elemental a todos los enemigos y aliados, tiene poder Mágico de 190.</td>
+                                <td>Meteo<br>Fusión</td>
+                                <td>96 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Raiden.png" alt="Foto de Raiden"></td>
+                                <td>Raiden</td>
+                                <td class="text-start"><strong>Shin-Zantetsuken:</strong><br>Puede matar a todos los enemigos de un golpe, tiene 140% probabilidades de acertar y falla si el enemigo es inmune a la muerte instantánea. Detiene el Ataque Final del enemigo durante un turno.</td>
+                                <td>Prisa</td>
+                                <td>80 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Leviatan.png" alt="Foto de Leviatán"></td>
+                                <td>Leviatán</td>
+                                <td class="text-start"><strong>Ola sísmica:</strong><br>Daño masivo de Elemento Agua a todos los enemigos, poder Mágico de 130.</td>
+                                <td>Inundación</td>
+                                <td>70 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Cactilion.png" alt="Foto de Cactilión"></td>
+                                <td>Cactilión</td>
+                                <td class="text-start"><strong>1.000 Espinas:</strong><br>Ocasiona 1.000 de daño a todos los enemigos.<br><br>
+                                    <strong>¿1.000 Espinas?:</strong><br>Ocasiona 9.999 de daño a todos los enemigos.</td>
+                                <td>Teleportar<br>Tenue<br>Prisa +</td>
+                                <td>50 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center"><img src="img/Espers/Diablo.png" alt="Foto de Diablo"></td>
+                                <td>Diablo</td>
+                                <td class="text-start"><strong>Mensajero oscuro:</strong><br>Reduce la VT del enemigo en 15/16, ignora la resistencia a la muerte instantánea, e inflige Bio.</td>
+                                <td>Gravedad<br>Gravedad +</td>
+                                <td>100 Puntos de Magia (PM)</td>
+                            </tr>
+                            <tr>
+                                <td class="text-lg-center "><img src="img/Espers/Gilgamesh.png" alt="Foto de Gilgamesh"></td>
+                                <td>Gilgamesh</td>
+                                <td class="text-start"><strong>Excalipúf:</strong><br>Ocasiona 1 de daño a todos los enemigos.<br><br>
+                                    <strong>Excálibur:</strong><br>Causa daño Sacro a todos los enemigos, tiene poder  Mágico de 120.<br><br>
+                                    <strong>Masamune:</strong><br>Causa daño a todos los enemigos, e ignora la Defensa del objetivo, tiene un poder de 99.<br><br>
+                                    <strong>Enkidu:</strong><br>Causa daño a todos los enemigos, e ignora la defensa del objetivo, tiene poder Mágico de 200.</td>
+                                <td>Prisa<br>Valor</td>
+                                <td>99 Puntos de Magia (PM)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+            </br>
+            </br>
+
+<!---- CARRUSEL DE IMÁGENES ----------------------------------------->
+
+            <div class="container-fluid px-0">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="carrusel">¿DÓNDE PUEDO JUGAR FINAL FANTASY VI?</h1>
+                </br>
+                <div class="container-fluid d-flex justify-content-center">
+                    <div id="carouselExampleIndicators" class="carousel slide border border-primary border-5 border-bottom-0" data-bs-ride="carousel" style="width: 75%;">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="img/Caratulas FF6/SNES-FFVI.jpg" class="d-block w-100" alt="Carátula de Final Fantasy VI de Super Nintendo (SNES)">
+                                <h5 class="bg-primary text-white fw-bold py-2 m-0 text-center">SUPER NINTENDO (SNES)</h5>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/Caratulas FF6/PS1-FFVI.jpg" class="d-block w-100" alt="Carátula de Final Fantasy VI de Plat Station 1 (PS1)">
+                                <h5 class="bg-primary text-white fw-bold py-2 m-0 text-center">PLAY STATION 1 (PS1)</h5>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/Caratulas FF6/GBA-FFVI.jpg" class="d-block w-100" alt="Carátula de Final Fantasy VI de Game Boy Advance (GBA)">
+                                <h5 class="bg-primary text-white fw-bold py-2 m-0 text-center">GAME BOY ADVANCE (GBA)</h5>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/Caratulas FF6/MOVIL-FFVI.jpg" class="d-block w-100" alt="Carátula de Final Fantasy VI de móvil">
+                                <h5 class="bg-primary text-white fw-bold py-2 m-0 text-center">DISPOSITIVOS INTELIGENTES (MÓVILES Y ORDENADORES)</h5>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/Caratulas FF6/PIXEL_REMASTER-FFVI.jpg" class="d-block w-100" alt="Carátula de Final Fantasy VI de cualquier dispositivo moderno">
+                                <h5 class="bg-primary text-white fw-bold py-2 m-0 text-center">PC - MÓVILES - NINTENDO SWITCH - PLAY STATION (4 Y 5)</h5>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+            </br>
+            </br>
+
+<!---- FORMULARIO AMPLIO -------------------------------------------->
+
+            <div class="container-fluid px-0">
+                <h1 class="fw-bold text-white bg-primary ps-3 m-0" id="formulario">FORMULARIO PARA SER SOCIO DE LA PÁGINA</h1>
+                </br>
+                <form action="ProyectoBoostrap.html" class="container-fluid w-100">
+                    <div class="row d-flex justify-content-center">
+
+                    <fieldset class="container-fluid w-50" >
+                        <legend class="fw-bold text-white bg-primary border border-3 border-primary m-0 ps-2 py-1 pe-0" style="--bs-bg-opacity:.75;">DATOS GENERALES</legend>
+                        <div class="bg-primary p-3 border border-3 border-primary border-top-0" style="--bs-bg-opacity:.10;">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label text-primary mb-1 pb-0 fw-bold">NOMBRE</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAviso" placeholder="Introduzca su nombre" required maxlenght="50" size="35">
+                                <div id="nombreAviso" class="form-text text-black">Tu nombre de usuario será visible públicamente.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="apellido1" class="form-label text-primary mb-1 pb-0 fw-bold">PRIMER APELLIDO</label>
+                                <input type="text" class="form-control" name="apellido1" id="apellido1" aria-describedby="apellido1Aviso" placeholder="Introduzca su primer apellido" required maxlenght="70" size="35">
+                                <div id="apellido1Aviso" class="form-text text-black">Tu primer apellido será visible públicamente.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="apellido2" class="form-label text-primary mb-1 pb-0 fw-bold">SEGUNDO APELLIDO</label>
+                                <input type="text" class="form-control" name="apellido2" id="apellido2" aria-describedby="apellido2Aviso" placeholder="Introduzca su segundo apellido" required maxlenght="70" size="35">
+                                <div id="apellido2Aviso" class="form-text text-black">Tu segundo apellido será visible públicamente.</div>
+                            </div>
+
+                            <div class="mb-0">
+                                <label for="fechaNac" class="form-label text-primary mb-1 pb-0 fw-bold">FECHA DE NACIMIENTO</label>
+                                <input type="date" class="form-control" name="fechaNac" id="fechaNac" aria-describedby="fechaNacAviso" required min="1900-01-01" max="2023-12-31">
+                                <div id="fechaNacAviso" class="form-text text-black">Tu fecha de nacimiento será pública SÓLO si quieres.</div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="container-fluid w-50">
+                        <legend class="fw-bold text-white bg-primary border border-3 border-primary m-0 ps-2 py-1 pe-0" style="--bs-bg-opacity:.75;">CONTACTO Y PRIVACIDAD</legend></br>
+                        <div class="bg-primary p-3 border border-3 border-primary border-top-0" style="--bs-bg-opacity:.10;">
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-primary mb-1 pb-0 fw-bold">E-MAIL</label>
+                                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailAviso" placeholder="Introduzca su correo electrónico" required maxlength="320" size="30">
+                                <div id="emailAviso" class="form-text text-black">Tu correo será compartido SÓLO si quieres.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contrasenia" class="form-label text-primary mb-1 pb-0 fw-bold">CONTRASEÑA</label>
+                                <input type="password" class="form-control" name="contrasenia" id="contrasenia" aria-describedby="contraseniaAviso" placeholder="Introduzca su contraseña" required maxlength="10" size="23">
+                                <div id="contraseniaAviso" class="form-text text-black">Tu contraseña es privada ¡NO LA COMPARTAS!</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contrasenia2" class="form-label text-primary mb-1 pb-0 fw-bold">REPETIR CONTRASEÑA</label>
+                                <input type="password" class="form-control" name="contrasenia2" id="contrasenia2" aria-describedby="contrasenia2Aviso" placeholder="Repita su contraseña" required maxlength="10" size="23">
+                                <div id="contrasenia2Aviso" class="form-text text-black">Repite tu contraseña para verificarla.</div>
+                            </div>
+
+                            <div class="mb-0">
+                                <label for="telefono" class="form-label text-primary mb-1 pb-0 fw-bold">TELÉFONO</label>
+                                <input class="form-control" name="telefono" id="telefono" aria-describedby="telefonoAviso" placeholder="Introduzca su número de teléfono" required size="9"/>
+                                <div id="telefonoAviso" class="form-text text-black">Tu teléfono estará disponible para verse en tu perfil.</div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" class="btn bg-primary border border-3 border-primary mt-3 fw-bold w-25 text-white text-center" style="--bs-bg-opacity: .75;" value="DAR DE ALTA">
+
+                </form>
+
+<!------------------------------------------------------------------->
+
+        </main>
+        <footer>
+
+        </br>
+        </br>
+        </br>
+
+<!---- PIE DE PÁGINA ------------------------------------------------>
+
+            <div class="container text-center bg-white border border-primary border-3 px-0">
+                <div class="align-items-stretch d-flex" style="width: 100%;">
+
+                    <div class="px-0 border border-3 border-primary" style="width: 30%;">
+                        <h2 class="mb-0 fw-bold py-2 text-black border border-4 border-end-0 border-start-0 border-top-0 border-primary bg-black" style="--bs-bg-opacity:.25;">AVISO LEGAL</h2>
+                        <p class="m-0 p-2 bg-black text-white">Este sitio web utiliza Cookies para el registro de navegación. Este registro se usa únicamente con el afán de ofrecer una mejor publicidad 
+                        y no poder ser ofrecida a terceros.</p>
+                    </div>
+
+                    <div class="px-0 border border-3 border-primary" style="width: 25%">
+                        <h2 class="mb-0 fw-bold bg-primary py-2 text-white">REDES SOCIALES</h2>
+                        <p class="m-0 p-2">Instagram</br>X</br>Youtube</br>Facebook</p>
+                    </div>
+
+                    <div class="px-0 flex-fill border border-3 border-primary">
+                        <h2 class="mb-0 fw-bold bg-primary py-2 text-center text-white">PROYECTO REALIZADO POR:</h2>
+                        <p class="m-0 p-2">David Falla Urtiaga.</p>
+                    </div>
+
+                </div>
+            </div>
+
+<!------------------------------------------------------------------->
+
+            </br>
+
+        </footer>
+    </body>
+</html>

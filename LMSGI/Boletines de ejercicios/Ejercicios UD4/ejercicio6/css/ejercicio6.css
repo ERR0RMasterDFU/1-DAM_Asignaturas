@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0%;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 15px 13px 15px 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+nav ul li:hover{
+    transform:scaleY(1.1);
+    background-color: brown;
+}
+
+

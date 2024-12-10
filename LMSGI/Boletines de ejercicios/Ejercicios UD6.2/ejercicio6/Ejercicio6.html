@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+	<head> 
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 6 del Boletín 6.2</title>
+		<style type="text/css"> 
+
+			body{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+			.requerido{
+				color: red;
+			}
+
+			div{
+				font-size: 10px;
+			}
+
+			h2{
+				font-size: 33px;
+                margin-bottom: 3px;
+			}
+
+            .select{
+				width: 170px;
+			}
+
+			form{
+				float: left;
+			}
+
+            hr{
+                margin: 0px;
+            }
+
+            fieldset{
+                display: flex;
+                border: 0px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 68px;
+            }
+
+            fieldset:hover{
+                background-color: #FF9;
+                color: black;
+            }
+
+            fieldset:hover>.ayuda{
+                color: black;
+            }
+
+            p{
+                padding-left: 20px;
+                color: white;
+                margin: 0px;
+            }
+
+            input, select{
+                border-width: 2px;
+            }
+
+            input:hover, select:hover{
+                border: 2px solid #E6B700;
+            }
+
+            .tituloSeparacion, .tituloSeparacion2, fieldset>label, .tituloSeparacion4{
+                font-size: 15px;
+            }
+
+            .tituloSeparacion{
+                margin-right: 10px;
+            }
+
+            .tituloSeparacion2{
+                margin-right: 8px;               
+            }
+
+            fieldset>label{
+                margin-right: 8px;               
+            }
+
+            .fieldsetEmail{
+               padding-left: 103px; 
+            }
+
+            .tituloSeparacion4{
+                margin-right: 7px;
+                padding-left: 10px;
+            }
+
+            .padding{
+                padding-right: 0px;
+            }
+
+            .boton{
+                margin-left: 525px;
+            }
+
+			.direccion{
+				display: block;
+				flex-wrap: wrap;
+			}
+
+			.direccion2, .direccion3, .telefono{
+				display: flex;
+			}
+
+			.direccion22, .direccion32{
+				margin-left: 57px;
+			}
+
+			.telefono2{
+				margin-left: 105px;
+			}
+
+           
+
+		</style> 
+	</head> 
+	<body> 
+		<main>
+			<h2>Formulario de alta</h2> 
+			<form method="post" action="#" name="formulario6"> 
+                <hr>
+
+				<fieldset class="fieldset1"> 
+                    <div class="tituloSeparacion">
+                        <label class="titulo" for="nombre"><strong>Nombre y </br>apellidos</strong><span class="requerido"><strong>*</strong></span></label> 
+                    </div>
+
+                    <div class="nombreApellidosSeparacion">								
+                        <input id="nombre" name="nombre" required size="18"/></br>
+                        <label for="nombre">Nombre</label>
+                        </br></br>
+                        <input id="apellido1" name="apellido1" required size="36"/></br>
+                        <label for="apellido1">Primer apellido</label> 
+                        </br></br>
+                        <input id="apellido2" name="apellido2" required size="36"/></br>
+                        <label for="apellido2">Segundo apellido</label> 
+                    </div>
+
+					<p class="ayuda">No te olvides de escribir también</br> tu segundo apellido.</p>
+				</fieldset> 
+
+                <hr>
+
+				<fieldset> 
+                    <div class="tituloSeparacion2">
+						<label class="titulo" for="direccion"><strong>Dirección</strong><span class="requerido"><strong>*</strong></span></label>
+                    </div> 
+
+<!--EMPIEZA dir----><div class="direccion">			
+						<input id="direccion" name="direccion" size="36"/></br>
+						<label for="direccion">Calle, número, piso, puerta</label> 
+						</br></br>
+<!---EMPIEZA dir2------><div class="direccion2">
+						    <div class="direccion21">
+								<input id="codigopostal" name="codigopostal" size="8"/></br>
+								<label for="codigopostal">Código postal</label> 
+							</div>
+							<div class="direccion22">
+								<input id="municipio" name="municipio"/></br>
+								<label for="municipio">Municipio</label> 
+						    </div>
+<!---ACABA dir2--------></div>
+					    </br>
+<!---EMPIEZA dir3------><div class="direccion3">
+							<div class="direccion31">
+								<select id="provincia" name="provincia">
+									<option value=""></option> 
+									<option value="provincia1">Provincia 1</option> 
+									<option value="provincia2">Provincia 2</option> 
+									<option value="provincia3">Provincia 3</option> 
+								</select></br>
+								<label for="provincia">Provincia</label> 
+							</div>
+
+							<div class="direccion32">
+								<select class="select" id="pais" name="pais"> 
+									<option value=""></option> 
+									<option value="pais1">País 1</option> 
+									<option value="pais2">País 2</option> 
+									<option value="pais3">País 3</option> 
+								</select></br>
+								<label for="pais">País</label> 	
+							</div>
+<!---ACABA dir3--------></div>		
+<!---ACABA dir-----></div> 
+					<p class="ayuda">El código postal es </br> imprescindible para poder </br> recibir los pedidos.</p>
+				</fieldset> 
+
+                <hr>
+
+				<fieldset class="fieldsetEmail"> 
+					    <label class="titulo" for="email"><strong>Email</strong></label> 
+						<input id="email" name="email" required maxlength="320" size="36"/> 
+					<p class="ayuda">Asegúrate de que sea váfieldsetdo.</p>
+				</fieldset>
+
+                <hr>
+
+				<fieldset> 
+                    <div class="tituloSeparacion4">
+					    <label class="titulo" for="telefonofijo"><strong>Teléfono</strong><span class="requerido"><strong>*</strong></span></label>
+                    </div>
+
+					<div class="telefono">
+						<div class="telefono1">
+							<input id="telefonofijo" name="telefonofijo" required size="15" pattern="(8|9)([0-9]){8}"/></br>
+							<label for="telefonofijo">Fijo</label>
+						</div>
+						<div class="telefono2">
+							<input id="telefonomovil" name="telefonomovil" required size="15" pattern="(6|7)([0-9]){8}"/></br>
+							<label for="telefonomovil">Móvil</label>
+						</div>			
+					</div> 
+					<p class="ayuda">Sin prefijo de país y </br>sin espacios en blanco.</p>
+				</fieldset>
+
+                <hr>
+
+				<fieldset class="padding">
+                    <div class="boton">
+					    <input id="alta" type="submit" value="Darme de alta &rarr;"/>
+                    </div> 
+				</fieldset> 
+			</form> 
+		</main>
+	</body> 
+</html>
